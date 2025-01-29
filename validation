@@ -1,32 +1,13 @@
-""" This class validates the email addresses and password when logging on."""
-
 class Validation:
     """ This class contains methods for validating email addresses and passwords."""
-    @staticmethod
-    # TODO: Implement the validate_email method using the staticmethod decorator.
-    class Validation:
-    def validate_email(self, email):
-        return "@" in email
-
-    def validate_password(self, password):
-        return (len(password) >= 8 and 
-                any(char.isdigit() for char in password) and 
-                any(char.isupper() for char in password) and 
-                any(char.islower() for char in password))
-    def validate_email(self, email):
-        return "@" in email
-
-    def validate_password(self, password):
-        # Add password validation logic here
-        pass
+    
     @staticmethod
     def validate_email(email):
-        # Check if the email contains an "@" symbol
+        """Check if the email contains an "@" symbol."""
         return "@" in email
-    # TODO: The method should take an email parameter and return True if the email contains an "@" symbol.
 
     @staticmethod
-    # TODO: Implement the validate_password method using the staticmethod decorator.
+    def validate_password(password):
         """
         This method validates a password based on the following criteria:
         - The password must be at least 8 characters long.
@@ -39,20 +20,39 @@ class Validation:
         Returns:
           bool: True if the password is valid, False otherwise.
         """
-        # TODO: Implement the password length validation logic.
-        # TODO: Check if the password is at least 8 characters long if not return False.
 
 
-        # TODO: Set the initial values for uppercase, lowercase, digit, and special characters to False.
-        # TODO: Has at least one uppercase letter, i.e., has_upper = False
-        # TODO: Has at least one lowercase letter
-        # TODO: Has at least one digit
-        # TODO: Has at least one special character
-        special_characters = "!@#$%^&*"
 
-        for char in password:
-        # TODO: Use if/elif/else statements to check the character type.
-        # TODO: Set the corresponding variable to True if it fits the criteria.
 
-        # Return the boolean value based on the conditions.
-        return has_upper and has_lower and has_digit and has_special
+def example_function():
+        print("This is the first line.")
+for i in range(5):
+        print("This is line", i)  # Indented within the for loop
+print("This is the last line.")
+        # Check if the password is at least 8 characters long
+if len(password) < 8:
+            return False
+
+        def my_function():
+            # This is the indented block of code
+            print("Hello, World!")
+    # Your code logic here
+    return "Some value"  # This return is inside the function
+
+# Call the function
+result = my_function()
+print(result)
+        
+has_upper = False
+has_lower = False
+has_digit = False
+has_special = False
+special_characters = "!@#$%^&*"
+
+for char in password:
+      def my_function():
+    print("Hello")
+    print("World")  # Now this line is correctly indented
+
+        # Return True only if all conditions are met
+        return has_upper an
